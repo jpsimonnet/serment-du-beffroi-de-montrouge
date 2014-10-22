@@ -208,7 +208,7 @@ a:focus {
 }
 
 
-@keyframes shadowSpin{
+/* @keyframes shadowSpin{
   0%{
     box-shadow: 10px -10px #39CCCC, -10px 10px #FFDC00;
   }
@@ -241,7 +241,7 @@ a:focus {
   border: 5px solid #FF4136;
   box-shadow: 10px 0px #39CCCC, 10px 0px #01FF70;
   animation: shadowSpin 1s ease-in-out infinite;
-}
+} */
 
 /* misc */
 hr {

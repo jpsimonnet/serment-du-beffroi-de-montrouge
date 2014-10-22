@@ -80,3 +80,30 @@ font-size: 2em;
 margin-bottom: 20px;
 font-size: 5em;
 }
+
+
+.skip-links {
+  position: absolute;
+  z-index: 999;
+}
+.skip-links a {
+  /* Hello, I'm a CSS-style comment */
+  position: absolute;
+  left: -7000px;
+  padding: 0.5em;
+  background: #1b2b5a;
+  color: white;
+  text-decoration: none;
+}
+.skip-links a:focus {
+  position: static;
+
+
+}
+
+ul.unstyled,
+ol.unstyled {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
