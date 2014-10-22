@@ -1,5 +1,4 @@
 # Le site du serment du Beffroi de Montrouge
-===============================
 
 ## Résumé
 
@@ -18,4 +17,4 @@ Le serment de Montrouge a été présenté lors d'une mini-conférence de ParisW
 
 ## Améliorer le site
 
-Fonctionalités, accessibilité, données personnelles, le site doit pouvoir aussi montrer le plus possibles les bonnes pratiques du web. je ne suis pas dev, alors merci pour vos retours et pardonnez par avance mon inculture technique (deja un repo github c'est compliqué pour moi :)).
+Fonctionalités, accessibilité, données personnelles, le site doit pouvoir aussi montrer le plus possible les bonnes pratiques du web. je ne suis pas dev, alors merci pour vos retours et pardonnez par avance mon inculture technique (deja un repo github c'est compliqué pour moi :)).
