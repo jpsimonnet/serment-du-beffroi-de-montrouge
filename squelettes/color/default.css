@@ -1,0 +1,82 @@
+
+a,.tp-caption a.btn:hover {
+	color: #b81111;
+}
+.top-nav-collapse {
+	background: #b81111;
+}
+
+.navbar-custom ul.nav ul.dropdown-menu li a:hover {
+	color: #b81111;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background-color: #b81111;
+}
+
+.widget-avatar .avatar:hover {
+    border: 5px solid #b81111;
+}
+
+.bg-skin {
+	background: #b81111;
+}
+
+form#contact-form input:focus,form#contact-form select:focus,form#contact-form textarea:focus {
+	border-color: #b81111;
+}
+
+footer {
+    background-color: #b81111;
+}
+
+.btn-skin {
+  color: #fff;
+  background-color: #b81111;
+  border-color: #b81111;
+}
+
+.spip-admin-bloc, .spip-admin-float {
+z-index: 999;
+position: fixed;
+right: 20%;
+top: initial !important;
+bottom: 0 !important;
+white-space: nowrap;
+}
+
+
+
+.choix input {float:left; margin-right:10px;}
+
+.formulaire_spip {
+text-align: left;
+width: 80%;
+margin: 0 auto;
+font-size: 1.5em;
+}
+
+.formulaire_spip  input[type=submit] {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: #eee;
+	display: block;
+	margin-left: 40px; 
+}
+
+.adapt-img-wrapper{margin:10px}
+a.pieddepage {color:#fff;}
+a:hover.pieddepage {color:#000;}
+
+.company-social {
+text-align: center;
+font-size: 2em;
+}
+
+.contact-icon span {
+margin-bottom: 20px;
+font-size: 5em;
+}

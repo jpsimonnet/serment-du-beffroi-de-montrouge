@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>[(#NOM_SITE_SPIP|textebrut)]</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="#CHEMIN{css/bootstrap.min.css}" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="#CHEMIN{font-awesome/css/font-awesome.min.css}" rel="stylesheet" type="text/css">
+	<link href="#CHEMIN{css/animate.css}" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="#CHEMIN{css/style.css}" rel="stylesheet">
+	<link href="#CHEMIN{color/default.css}" rel="stylesheet">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	<!-- Preloader -->
+	<div id="preloader">
+	  <div id="load"></div>
+	</div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#URL_SITE_SPIP">
+                    <h1>le SBM</h1>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#intro">Accueil</a></li>
+        <BOUCLE_rubriques(ARTICLES){tout}{par num titre}>
+			<li><a href="#nav_#ID_ARTICLE">#TITRE</a></li>
+		</BOUCLE_rubriques>
+		<li><a href="#contact">Contact</a></li>
+      </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<!-- Section: intro -->
+    <section id="intro" class="intro">
+	
+		<div class="slogan">
+			<h2>#DESCRIPTIF_SITE_SPIP</h2>
+			<h4>#SLOGAN_SITE_SPIP</h4>
+		</div>
+		<div class="page-scroll">
+			<a href="#nav_4" class="btn btn-circle">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+		</div>
+    </section>
+	<!-- /Section: intro -->
+
+	 <BOUCLE_art(ARTICLES){tout}{par num titre}>
+	 <!-- Section: about -->
+    <section id="nav_#ID_ARTICLE" class="home-section text-center">
+		<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+					<h2>#TITRE</h2>
+					<i class="fa fa-2x fa-angle-down"></i>
+
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-5">
+				<hr class="marginbot-50">
+			</div>
+		</div>
+        <div class="row">
+	        
+	        <div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="wow bounceInUp" data-wow-delay="0.2s">
+                <div class="team boxed-grey">
+                    <div class="inner text-left">
+						 
+                        [(#TEXTE)]
+                        
+                        <BOUCLE_livreor(ARTICLES){si #ID_ARTICLE|=={3}}{0,1}>
+                        <h3>Signez !</h3>
+                        
+                         [(#REM) Signer la petition ]
+							#FORMULAIRE_SIGNATURE
+							
+							
+                         
+						</BOUCLE_livreor>
+
+
+                         
+                    </div>
+                </div>
+				</div>
+            </div>
+	        
+            
+        </div>		
+		</div>
+	</section>
+	<!-- /Section: about -->
+	</BOUCLE_art>
+	
+
+ 
+	
+
+	
+
+	<!-- Section: contact -->
+    <section id="contact" class="home-section text-center">
+		<div class="heading-contact">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+					<h2>Contact</h2>
+					<i class="fa fa-2x fa-angle-down"></i>
+
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-5">
+				<hr class="marginbot-50">
+			</div>
+		</div>
+    <div class="row">
+	    
+	    <div class="col-sm-6 col-md-6">
+				<div class="wow fadeInRight" data-wow-delay="0.2s">
+                <div class="service-box">
+					<div class="contact-icon">
+						<span class="glyphicon glyphicon-info-sign"></span>
+					</div>
+					<div >
+						<h3>Mentions légales</h3>
+						<p class="text-left"><strong>Le collectif du Serment du beffroi de Montrouge</strong></p>
+						<ul class="text-left">
+							<li>Ce site est la propriété de Jean-Philippe Simonnet</li>
+							<li>Les membres du collectifs sont : </li>
+								<ul>
+									<li>Eric Daspect</li>
+									<li>Olivier Gendrin</li>
+									<li>...</li>
+								</ul>
+							<li>Il est hébergé par alwaysdata.net</li>
+							<li>Credits photos : Thanh Nguyen</li>
+						</ul>
+					</div>
+                </div>
+				</div>
+            </div>
+            
+        <div class="col-sm-6 col-md-6">
+				<div class="wow fadeInRight" data-wow-delay="0.2s">
+                <div class="service-box">
+					<div class="contact-icon">
+						<span class="glyphicon glyphicon-thumbs-up"></span>
+					</div>
+					<div >
+						<h3>Réseaux sociaux</h3>
+						<ul class="company-social">
+                            <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>	
+					</div>
+                </div>
+				</div>
+            </div>
+
+		
+		 
+    </div>	
+
+		</div>
+	</section>
+	<!-- /Section: contact -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="wow shake" data-wow-delay="0.4s">
+					<div class="page-scroll marginbot-30">
+						<a href="#intro" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+					</div>
+					</div>
+					<p><a  rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <br /> <a class="pieddepage" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>.</p>
+				</div>
+			</div>	
+		</div>
+	</footer>
+
+    <!-- Core JavaScript Files -->
+    <script src="#CHEMIN{js/jquery.min.js}"></script>
+    <script src="#CHEMIN{js/bootstrap.min.js}"></script>
+    <script src="#CHEMIN{js/jquery.easing.min.js}"></script>	
+	<script src="#CHEMIN{js/jquery.scrollTo.js}"></script>
+	<script src="#CHEMIN{js/wow.min.js}"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="#CHEMIN{js/custom.js}"></script>
+
+</body>
+
+</html>
