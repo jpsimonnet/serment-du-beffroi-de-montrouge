@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta property="og:url" content="[(#SELF|url_absolue )]" />
+	<meta property="og:site_name" content="[(#NOM_SITE_SPIP|textebrut)]" />
+	<meta property="og:locale" content="fr_FR" />
 
     <title>[(#NOM_SITE_SPIP|textebrut)]</title>
 
@@ -55,7 +56,7 @@
 
 	<!-- Section: intro -->
     <section id="intro" class="intro">
-	
+
 		<div class="slogan">
 			<h2>#DESCRIPTIF_SITE_SPIP</h2>
 			<h4>#SLOGAN_SITE_SPIP</h4>
@@ -94,43 +95,43 @@
 			</div>
 		</div>
         <div class="row">
-	        
+
 	        <div class="col-xs-12 col-sm-12 col-md-12">
 				<div class="wow bounceInUp" data-wow-delay="0.2s">
                 <div class="team boxed-grey">
                     <div class="inner text-left">
-						 
+
                         [(#TEXTE)]
-                        
+
                         <BOUCLE_livreor(ARTICLES){si #ID_ARTICLE|=={3}}{0,1}>
                         <h3>Signez !</h3>
-                        
+
                          [(#REM) Signer la petition ]
 							#FORMULAIRE_SIGNATURE
-							
-							
-                         
+
+
+
 						</BOUCLE_livreor>
 
 
-                         
+
                     </div>
                 </div>
 				</div>
             </div>
-	        
-            
-        </div>		
+
+
+        </div>
 		</div>
 	</section>
 	<!-- /Section: about -->
 	</BOUCLE_art>
-	
 
- 
-	
 
-	
+
+
+
+
 
 	<!-- Section: contact -->
     <section id="contact" class="home-section text-center">
@@ -157,7 +158,7 @@
 			</div>
 		</div>
     <div class="row">
-	    
+
 	    <div class="col-sm-6 col-md-6">
 				<div class="wow fadeInRight" data-wow-delay="0.2s">
                 <div class="service-box">
@@ -182,7 +183,7 @@
                 </div>
 				</div>
             </div>
-            
+
         <div class="col-sm-6 col-md-6">
 				<div class="wow fadeInRight" data-wow-delay="0.2s">
                 <div class="service-box">
@@ -195,15 +196,15 @@
                             <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
                             <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>	
+                        </ul>
 					</div>
                 </div>
 				</div>
             </div>
 
-		
-		 
-    </div>	
+
+
+    </div>
 
 		</div>
 	</section>
@@ -222,14 +223,14 @@
 					</div>
 					<p><a  rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <br /> <a class="pieddepage" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>.</p>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</footer>
 
     <!-- Core JavaScript Files -->
     <script src="#CHEMIN{js/jquery.min.js}"></script>
     <script src="#CHEMIN{js/bootstrap.min.js}"></script>
-    <script src="#CHEMIN{js/jquery.easing.min.js}"></script>	
+    <script src="#CHEMIN{js/jquery.easing.min.js}"></script>
 	<script src="#CHEMIN{js/jquery.scrollTo.js}"></script>
 	<script src="#CHEMIN{js/wow.min.js}"></script>
     <!-- Custom Theme JavaScript -->
