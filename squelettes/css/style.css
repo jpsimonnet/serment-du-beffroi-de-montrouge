@@ -63,6 +63,10 @@ a:focus {
 	
 }
 
+.navbar li.bouton-home {display: none}
+
+.top-nav-collapse li.bouton-home {display: block}
+
 .navbar-brand {
     font-weight: 700;
 }
@@ -86,7 +90,7 @@ a:focus {
 }
 
 .nav.navbar-nav {
-    background-color: rgba(255,255,255,.4);
+    background-color: rgba(255,255,255,.8);
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
@@ -97,7 +101,7 @@ a:focus {
 .navbar-custom ul.nav li a {
 	font-size: 12px;
 	letter-spacing: 1px;
-    color: #444;
+    color: #000;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -140,17 +144,19 @@ a:focus {
     transition: background .3s ease-in-out;
 }
 
+
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
-    background-color: rgba(255,255,255,.2);
+    background-color:rgba(255,255,255,1);
 }
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li.active {
+
+.top-nav-collapse   .nav li a:hover,
+.top-nav-collapse   .nav li a:focus,
+.top-nav-collapse   .nav li.active {
     outline: 0;
-    background-color: rgba(255,255,255,.2);
+    background-color: #D71E1E ;
 }
 
 .navbar-toggle {
@@ -317,7 +323,8 @@ hr {
 
 .intro .slogan {
 	text-align: center;
-
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px 0 5px;
 }
 
 .intro .page-scroll {
@@ -361,6 +368,8 @@ hr {
 .boxed-grey {
 	background: #f9f9f9;
 	padding: 20px;
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 .team h5 {
@@ -765,12 +774,47 @@ Parallax
 		margin-bottom: 30px;
 	}
 	
+	#intro.intro {	
+	background: url(../img/fond1.jpg) no-repeat 75% 0% !important;
+	}
+
+	
 	.formulaire_spip {width:80%;}
 
 	
 }
 
 @media (max-width:480px) {
+	
+	.container {
+		width: 320px;
+		height:auto;
+		overflow-x: hidden;
+	}
+	
+	.intro .slogan h2 {
+	color: #FFF;
+	text-shadow: none;
+	font-size: 30px;
+	line-height: 40px;
+	}
+
+	.intro .slogan h4 {
+	color: #fff;
+	text-shadow: -1px 1px 1px #000;
+	}
+	
+	#intro.intro {	
+	background: url(../img/fond1.jpg) no-repeat 75% 0% !important;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 10px;
+	}
+	
+	.marginbot-50 {
+	margin-bottom: 10px !important;
+	}
 
 	.navbar-custom .nav.navbar-nav {
     background-color: rgba(255,255,255,.4);

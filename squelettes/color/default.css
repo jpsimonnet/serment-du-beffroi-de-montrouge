@@ -38,12 +38,18 @@ footer {
 }
 
 .spip-admin-bloc, .spip-admin-float {
-z-index: 999;
-position: fixed;
-right: 20%;
-top: initial !important;
-bottom: 0 !important;
-white-space: nowrap;
+	z-index: 999;
+	position: fixed;
+	right: 20%;
+	top: initial !important;
+	bottom: 0 !important;
+	white-space: nowrap;
+}
+
+img.adapt-img, .lazy img.adapt-img {
+	opacity: 0.70;
+	max-width: 100%;
+	height: auto !important;
 }
 
 
@@ -108,26 +114,40 @@ ol.unstyled {
   padding-left: 0;
 }
 
+.pola a
+	{
+		background: white;
+		display: inline;
+		float: left;
+		margin: 0 15px 30px;
+		padding: 10px 10px 25px;
+		text-align: center;
+		text-decoration: none;
+		-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .8);
+		-moz-box-shadow: 0 4px 6px rgba(0,0,0,.8);
+		box-shadow: 0 4px 6px rgba(0,0,0,.8);
+		-webkit-transition: all .15s linear;
+		-moz-transition: all .15s linear;
+		transition: all .15s linear;
+		z-index:0;
+	        position:relative;
+	}
+
+
+.commons {font-size:1em}
 
 /* Shared styles */
 
         .drop-shadow {
             position:relative;
             float:left;
-            width:90%;
+            width:100%;
             padding:5em 1em;
-            margin:3em;
-            background:#fff;
-            -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-        }
-
-        .drop-shadow:before,
-        .drop-shadow:after {
-            content:"";
-            position:absolute;
-            z-index:-2;
+            margin:0 auto 5em;
+            background:#FEFFE8;
+            -webkit-box-shadow:0 3px 8px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow:0 3px 8px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 3px 8px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 0, 0, 0.1) inset;
         }
 
         .drop-shadow p {
@@ -135,6 +155,29 @@ ol.unstyled {
 		   line-height: 1.9em;
             text-align: center;
            /* font-weight:bold;*/
+        }
+        
+        @media (max-width:480px) {
+	        
+	        .drop-shadow {
+            padding:3em 1em;
+            margin:2em auto;
+        	}
+        	
+			.drop-shadow p {
+           font-size: 18px;
+		   line-height: 1.7em;
+            text-align: center;
+           /* font-weight:bold;*/
+        	}
+
+	     }
+
+        .drop-shadow:before,
+        .drop-shadow:after {
+            content:"";
+            position:absolute;
+            z-index:-2;
         }
 
         /* Lifted corners */

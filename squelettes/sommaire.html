@@ -38,15 +38,18 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#URL_SITE_SPIP">
-                    <h1>le SBM</h1>
+                <a class="navbar-brand visible-xs visible-sm" href="#URL_SITE_SPIP">
+                    <h1>Le SBM</h1>
+                </a>
+                 <a class="navbar-brand visible-md  visible-lg" href="#URL_SITE_SPIP">
+                    <h1>Le Serment</h1>
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="navigation">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#intro">Accueil</a></li>
+        <li class="active bouton-home"><a href="#intro">Accueil</a></li>
         <BOUCLE_rubriques(ARTICLES){tout}{par num titre}>
 			<li><a href="#nav_#ID_ARTICLE">#TITRE</a></li>
 		</BOUCLE_rubriques>
@@ -174,14 +177,15 @@
 						<p class="text-left"><strong>Le collectif du Serment du beffroi de Montrouge</strong></p>
 						<ul class="text-left">
 							<li>Ce site est la propriété de Jean-Philippe Simonnet</li>
+							<li>Il est hébergé par alwaysdata.net</li>
 							<li>Les membres du collectifs sont : </li>
 								<ul>
-									<li>Eric Daspect</li>
+									<li>Eric Daspet</li>
 									<li>Olivier Gendrin</li>
 									<li>...</li>
 								</ul>
-							<li>Il est hébergé par alwaysdata.net</li>
-							<li>Credits photos : Thanh Nguyen</li>
+							
+							<li>Crédits photos : Thanh Nguyen</li>
 						</ul>
 					</div>
                 </div>
@@ -225,7 +229,7 @@
 						</a>
 					</div>
 					</div>
-					<p><a  rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <br /> <a class="pieddepage" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>.</p>
+					<p class="commons"><a  rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <br /> <a class="pieddepage" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>.</p>
 				</div>
 			</div>
 		</div>
