@@ -3,9 +3,10 @@
 ## Résumé
 
 
-webmaster, chef de projets, développeurs, intégrateurs, administrateur réseau… Nous avons tous entre les mains des mots de passe de nos collègues, amis, responsables, voire de nos sociétés, certains de nos clients.
+Que nous soyons webmasters, chefs de projet, développeurs, intégrateurs, administrateurs réseaux, nous sommes souvent amenés à avoir dans les mains les mots de passe de nos collègues, de nos amis, de nos responsables, voire de nos employeurs ou de certains de nos clients.
 
-Pourtant combien d’entre nous ont une clause de confidentialité dans leurs contrats ? À l’heure de la tentation sécuritaire, de l’envie de légiférer des politiciens sur les droits et les devoirs des internautes, de la peur de ne pas savoir gérer nos identités numériques, que penser de ces mots de passe qui nous sont confiés du fait de notre compétence professionnelle ? Serons-nous, un jour, comme les médecins, avocats obligés de prêter serment ? Pourrons-nous invoquer la protection de nos sources, comme les journalistes, pour les données qui nous sont confiées ?
+Pourtant combien d’entre nous ont une clause de confidentialité dans leurs contrats ? 
+À l’heure de la tentation sécuritaire, de l’envie de légiférer sur les droits et les devoirs des internautes, de la peur de ne pas savoir gérer nos identités numériques, que penser de ces mots de passe qui nous sont confiés du fait de notre compétence professionnelle ? Serons-nous un jour, à l’instar des médecins ou des avocats, amenés à prêter serment ?Pourrons-nous invoquer la confidentialité de nos sources, à l’instar des journalistes, pour protéger les données qui nous sont confiées ?
 
 
 ## Présentation
