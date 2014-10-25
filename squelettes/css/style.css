@@ -267,8 +267,8 @@ hr {
 ============================ */
 
 .home-section {
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 90px;
+    padding-bottom: 0;
 	display:block;
     position:relative;
     z-index:120;
@@ -788,6 +788,16 @@ Parallax
 		width: 320px;
 		height:auto;
 		overflow-x: hidden;
+		padding: 10px;
+	}
+	
+	.home-section {
+	padding-top: 80px;
+	padding-bottom: 0px;
+	}
+	
+	.section-heading i {
+	margin-bottom: 0;
 	}
 	
 	.intro .slogan h2 {
@@ -802,13 +812,35 @@ Parallax
 	text-shadow: -1px 1px 1px #000;
 	}
 	
+	.boxed-grey{padding:5px;}
+	
 	#intro.intro {	
 	background: url(../img/fond1.jpg) no-repeat 75% 0% !important;
 	}
 	
 	h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 10px;
+	
 	}
+	
+	h2{font-size: 20px;}
+	h3{font-size: 18px;}
+	
+	p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.4em;
+	}
+	
+	.drop-shadow {
+		padding: 1em;
+		margin: 0 ;
+	}
+			
+	.drop-shadow p {
+		font-size: 16px !important;
+		line-height: 1.4em !important;
+		}
 	
 	.marginbot-50 {
 	margin-bottom: 10px !important;
@@ -834,6 +866,23 @@ Parallax
 		border: 2px solid #fff;
 		border-radius: 50%;
 		font-size: 20px;
+	}
+	
+	.formulaire_spip {
+		text-align: left;
+		width: 100%;
+		margin: 0 auto;
+		font-size: 1em;
+	}
+	
+	.formulaire_spip ul{
+		padding: 0;
+	}
+	
+	.formulaire_spip input[type=submit] {
+		font-size: 1em !important;
+		padding: 5px !important;
+		margin-left: 0 !important;
 	}
 	
 }

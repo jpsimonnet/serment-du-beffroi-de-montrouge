@@ -95,22 +95,24 @@
 			</div>
 		</div>
 		<div class="container">
-
-		<div class="row">
-			<div class="col-lg-2 col-lg-offset-5">
-				<hr class="marginbot-50">
-			</div>
-		</div>
         <div class="row">
 
 	        <div class="col-xs-12 col-sm-12 col-md-12">
 				<div class=" bounceInUp" data--delay="0.2s">
                 <div class="team boxed-grey">
                     <div class="inner text-left">
-
                         [(#TEXTE)]
-
-
+                         [(#PETITION|oui)<INCLURE{fond=inclure/petition,id_article,env,ajax} />]
+                         [(#PETITION|oui)
+                         <h3>Faites passer le message sur les réseaux sociaux</h3>
+                         <ul class="company-social">							
+                            <li class="social-facebook"><a href="http://www.facebook.com/sharer/sharer.php?u=[(#SELF|url_absolue)]&t=J%27ai%20pr%C3%AAt%C3%A9%20mon%20serment%20du%20beffroi%20de%20Montrouge%2C%20Faites%20en%20autant%20!" title="Partager sur Facebook (nouvelle fenêtre)" target="_blank"><i class="fa fa-facebook"></i></a></li>			        
+                            
+                             <li class="social-twitter"><a href="https://twitter.com/intent/tweet?hashtags=serment&original_referer=https%3A%2F%2Fabout.twitter.com%2Ffr%2Fresources%2Fbuttons&text=J%27ai%20pr%C3%AAt%C3%A9%20mon%20serment%20du%20beffroi%20de%20Montrouge%2C%20Faites%20en%20autant%20!&tw_p=tweetbutton&url=http%3A%2F%2Fsimonnet.me%2Fserment%2F&via=oxymore" title="Partager sur Twitter (nouvelle fenêtre)" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            
+                            
+                            <li class="social-google"><a href="http://plus.google.com/share?hl=fr&url=[(#SELF|url_absolue)]&t=J%27ai%20pr%C3%AAt%C3%A9%20mon%20serment%20du%20beffroi%20de%20Montrouge%2C%20Faites%20en%20autant%20!" title="Partager sur Google + (nouvelle fenêtre)" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>]
                     </div>
                 </div>
 				</div>
@@ -162,20 +164,10 @@
 						<span class="glyphicon glyphicon-info-sign"></span>
 					</div>
 					<div >
-						<h3>Mentions légales</h3>
-						<p class="text-left"><strong>Le collectif du Serment du beffroi de Montrouge</strong></p>
-						<ul class="text-left">
-							<li>Ce site est la propriété de Jean-Philippe Simonnet</li>
-							<li>Il est hébergé par alwaysdata.net</li>
-							<li>Les membres du collectifs sont : </li>
-								<ul>
-									<li>Eric Daspet</li>
-									<li>Olivier Gendrin</li>
-									<li>...</li>
-								</ul>
-							
-							<li>Crédits photos : Thanh Nguyen</li>
-						</ul>
+						<BOUCLE_contact(ARTICLES){page=mentions}>
+						<h3>#TITRE</h3>
+						[<div class="text-left">(#TEXTE)</div>]
+						</BOUCLE_contact>
 					</div>
                 </div>
 				</div>
@@ -185,15 +177,14 @@
 				<div class=" fadeInRight" data--delay="0.2s">
                 <div class="service-box">
 					<div class="contact-icon">
-						<span class="glyphicon glyphicon-thumbs-up"></span>
+						<span class="glyphicon glyphicon-heart"></span>
 					</div>
 					<div >
-						<h3>Réseaux sociaux</h3>
-						<ul class="company-social">
-                            <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
+						<BOUCLE_contact2(ARTICLES){page=collectif}>
+						<h3>#TITRE</h3>
+						[<div class="text-left">(#TEXTE)</div>]
+						</BOUCLE_contact2>
+						
 					</div>
                 </div>
 				</div>

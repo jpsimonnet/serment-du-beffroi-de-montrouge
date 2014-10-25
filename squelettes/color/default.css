@@ -57,10 +57,12 @@ img.adapt-img, .lazy img.adapt-img {
 
 .formulaire_spip {
 text-align: left;
-width: 80%;
+width: 90%;
 margin: 0 auto;
-font-size: 1.5em;
+font-size: 1.3em;
 }
+
+.formulaire_spip ul li {list-style-type: none}
 
 .formulaire_spip  input[type=submit] {
 	font-size: 1.5em;
@@ -71,6 +73,17 @@ font-size: 1.5em;
 	display: block;
 	margin-left: 40px; 
 }
+
+/*.formulaire_spip .reponse_formulaire_ok {
+	position: fixed;
+	top: 100px;
+	right: 0;
+	display: block;
+	background: #FFF;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2em;
+}*/
 
 .adapt-img-wrapper{margin:10px}
 a.pieddepage {color:#fff;}
