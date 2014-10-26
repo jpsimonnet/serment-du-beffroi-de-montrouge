@@ -64,8 +64,8 @@ font-size: 1.3em;
 
 .formulaire_spip ul li {list-style-type: none}
 
-.formulaire_spip  input[type=submit] {
-	font-size: 1.5em;
+.formulaire_spip  input[type=submit], .formulaire_spip button[type=submit] {
+	font-size: 1.3em;
 	font-weight: bold;
 	padding: 10px 20px;
 	border-radius: 10px;
@@ -85,7 +85,7 @@ font-size: 1.3em;
 	padding: 2em;
 }*/
 
-.adapt-img-wrapper{margin:10px}
+.adapt-img-wrapper{margin:10px; max-width: 100%}
 a.pieddepage {color:#fff;}
 a:hover.pieddepage {color:#000;}
 
@@ -131,8 +131,9 @@ ol.unstyled {
 		background: white;
 		display: inline;
 		float: left;
-		margin: 0 15px 30px;
-		padding: 10px 10px 25px;
+		margin: 0 0 20px 0;
+		padding: 20px;
+		max-width: 100%;
 		text-align: center;
 		text-decoration: none;
 		-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .8);
