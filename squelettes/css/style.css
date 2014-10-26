@@ -318,7 +318,7 @@ hr {
 .intro {
 	width:100%;
 	position:relative;
-	
+	background-size: cover;
 	background: url(../img/fond1.jpg) no-repeat top center;
 }
 
