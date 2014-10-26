@@ -30,6 +30,11 @@ h6 {
     color:#b81111;
 }
 
+small, .small, .small p {
+font-size: 100%;
+line-height: 1em;
+}
+
 p {
     margin: 0 0 20px;
     font-size: 18px;

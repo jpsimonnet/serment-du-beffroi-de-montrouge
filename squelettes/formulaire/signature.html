@@ -15,7 +15,7 @@
 		<legend><:form_forum_identifiants:></legend>
 		<ul>
 			<li class='editer saisie_nom_email[ (#ENV*{erreurs}|table_valeur{session_nom}|oui)erreur] obligatoire'>
-				<label for="session_nom"><:petitions:form_pet_votre_nom:> <:info_obligatoire_02:></label>
+				<label for="session_nom">Votre nom ou pseudo<:info_obligatoire_02:></label>
 				[<span class="erreur_message">(#ENV*{erreurs}|table_valeur{session_nom})</span>]
 				<input type="text" class="text form-control" name="session_nom" id="session_nom" value="#ENV{session_nom}" size="30" />
 			</li>
