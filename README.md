@@ -13,7 +13,7 @@ Pourtant combien d’entre nous ont une clause de confidentialité dans leurs co
 
 Le serment de Montrouge a été présenté lors d'une mini-conférence de ParisWeb 2014
 
-* Vous pouvez retrouver [le programme sur mon site perso](http://simonnet.me/interventions-presentations/article/2014-petits-secrets-entre-amis-les-acteurs-du-web)
+* Vous pouvez retrouver [le site sur mon site perso](http://simonnet.me/serment/)
 * La présentation [sur le site de Parisweb](http://www.paris-web.fr/2014/conferences/petits-secrets-entre-amis-les-acteurs-du-web-doivent-ils-preter-serment.php)
 
 ## Améliorer le site
